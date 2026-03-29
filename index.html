@@ -7,152 +7,81 @@
     <style>
         body {
             font-family: Arial, sans-serif;
+            line-height: 1.6;
             margin: 0;
             padding: 0;
-            background-color: #f4f4f4;
+            background-color: #f7f7f7;
             color: #333;
         }
-
-        header {
-            background-color: #0284c7;
-            color: white;
-            padding: 40px 20px;
-            text-align: center;
-        }
-
-        header h1 {
-            margin: 0;
-            font-size: 2.5em;
-        }
-
         .container {
-            max-width: 1100px;
+            max-width: 900px;
             margin: 40px auto;
-            padding: 0 20px;
-        }
-
-        .services-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-            gap: 20px;
-        }
-
-        .service-card {
+            padding: 20px;
             background: #fff;
-            padding: 25px;
             border-radius: 10px;
-            box-shadow: 0 4px 15px rgba(0,0,0,0.1);
-            transition: transform 0.2s, box-shadow 0.2s;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
         }
-
-        .service-card:hover {
-            transform: translateY(-5px);
-            box-shadow: 0 8px 20px rgba(0,0,0,0.15);
-        }
-
-        .service-card h2 {
+        h1, h2 {
             color: #1f2937;
-            margin-top: 0;
         }
-
-        .service-card ul {
+        h1 {
+            text-align: center;
+            margin-bottom: 40px;
+        }
+        h2 {
+            margin-top: 30px;
+            margin-bottom: 10px;
+        }
+        ul {
             margin-left: 20px;
         }
-
-        .service-card p {
-            margin: 15px 0;
-        }
-
-        .btn {
-            display: inline-block;
-            background-color: #0284c7;
-            color: white;
-            padding: 10px 20px;
-            text-decoration: none;
-            border-radius: 5px;
-            transition: background-color 0.2s;
-        }
-
-        .btn:hover {
-            background-color: #0369a1;
-        }
-
         .snippet {
             background: #e0f2fe;
             border-left: 5px solid #0284c7;
-            padding: 20px;
-            margin: 30px 0;
+            padding: 15px;
+            margin: 20px 0;
             border-radius: 5px;
-            font-size: 1.1em;
         }
-
-        footer {
-            text-align: center;
-            padding: 20px;
-            background: #1f2937;
-            color: #fff;
-            margin-top: 40px;
-        }
-
-        @media (max-width: 600px) {
-            header h1 {
-                font-size: 2em;
-            }
+        .note {
+            font-style: italic;
+            color: #555;
+            margin-top: 20px;
         }
     </style>
 </head>
 <body>
+    <div class="container">
+        <h1>Services & Portfolio</h1>
 
-<header>
-    <h1>Services & Portfolio</h1>
-</header>
+        <h2>Bookkeeping Reports</h2>
+        <p>
+            Accurate, clear, and timely financial reporting to help you understand your business performance.
+            Includes sample reports that demonstrate how your financial data can be organized for decision-making, compliance, and planning.
+        </p>
 
-<div class="container">
+        <h2>Email Artifact Analysis & Executive Reports</h2>
+        <p>
+            Fast, thorough analysis of suspicious emails with actionable insights. This service digs into the email itself — headers, sending infrastructure, and potential threats — and delivers a <strong>professional, executive-ready report</strong> within 24 hours. Portfolio examples show exactly how findings are presented, making it easy for clients to see the value.
+        </p>
 
-    <div class="services-grid">
-        <!-- Bookkeeping Card -->
-        <div class="service-card">
-            <h2>Bookkeeping Reports</h2>
-            <p>
-                Accurate, clear, and timely financial reporting to help you understand your business performance.
-                Includes sample reports that demonstrate how your financial data can be organized for decision-making, compliance, and planning.
-            </p>
-            <a href="#" class="btn">View Report Sample</a>
+        <ul>
+            <li>Email header inspection and source tracing</li>
+            <li>Domain, IP, and server investigation</li>
+            <li>Identification of spoofing or malicious indicators</li>
+            <li>Clear, executive-friendly reporting</li>
+        </ul>
+
+        <p><strong>Purpose:</strong> Quickly understand the risks of a specific email and make informed cybersecurity decisions.</p>
+
+        <div class="snippet">
+            <strong>Fast, Clear Email Threat Analysis</strong><br>
+            Upload a suspicious email and get a <strong>professional executive report within 24 hours</strong>. See exactly where it came from, uncover hidden risks, and get actionable insights — all presented in a clear, easy-to-understand format.<br>
+            <em>Protect your inbox. Make informed decisions.</em>
         </div>
 
-        <!-- Email Analysis Card -->
-        <div class="service-card">
-            <h2>Email Artifact Analysis & Executive Reports</h2>
-            <p>
-                Fast, thorough analysis of suspicious emails with actionable insights. This service digs into the email itself — headers, sending infrastructure, and potential threats — and delivers a <strong>professional, executive-ready report</strong> within 24 hours.
-            </p>
-            <ul>
-                <li>Email header inspection and source tracing</li>
-                <li>Domain, IP, and server investigation</li>
-                <li>Identification of spoofing or malicious indicators</li>
-                <li>Clear, executive-friendly reporting</li>
-            </ul>
-            <p><strong>Purpose:</strong> Quickly understand the risks of a specific email and make informed cybersecurity decisions.</p>
-            <a href="#" class="btn">View Report Sample</a>
-        </div>
+        <p class="note">
+            Notes for Portfolio: Focus on Bookkeeping Reports and Email Analysis Reports. Do not include historical transaction import examples. Use real-world samples that show the deliverables clients receive.
+        </p>
     </div>
-
-    <!-- Homepage Snippet / Elevator Pitch -->
-    <div class="snippet">
-        <strong>Fast, Clear Email Threat Analysis</strong><br>
-        Upload a suspicious email and get a <strong>professional executive report within 24 hours</strong>. See exactly where it came from, uncover hidden risks, and get actionable insights — all presented in a clear, easy-to-understand format.<br>
-        <em>Protect your inbox. Make informed decisions.</em>
-    </div>
-
-    <p class="note">
-        Notes for Portfolio: Focus on Bookkeeping Reports and Email Analysis Reports. Do not include historical transaction import examples. Use real-world samples that show the deliverables clients receive.
-    </p>
-
-</div>
-
-<footer>
-    &copy; 2026 Your Name or Company. All Rights Reserved.
-</footer>
-
 </body>
 </html>
