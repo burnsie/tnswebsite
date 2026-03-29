@@ -3,73 +3,122 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Your Company Name</title>
+    <title>TrueNorth Security</title>
     <style>
         body {
             font-family: Arial, sans-serif;
             background-color: #f7f7f7;
-            color: #333;
             margin: 0;
             padding: 0;
         }
+        header {
+            background-color: #0284c7;
+            color: #fff;
+            padding: 40px 20px;
+            text-align: center;
+        }
+        header h1 {
+            margin: 0;
+            font-size: 2.5em;
+        }
         .container {
-            max-width: 900px;
+            max-width: 1100px;
             margin: 40px auto;
+            padding: 0 20px;
+        }
+        .cards {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+        }
+        .card {
+            background: #fff;
+            flex: 1 1 45%;
             padding: 20px;
-            background-color: #fff;
             border-radius: 10px;
             box-shadow: 0 0 10px rgba(0,0,0,0.1);
+            min-width: 280px;
         }
-        h1, h2 {
-            color: #1f2937;
+        .card h2 {
+            margin-top: 0;
         }
-        h1 {
-            text-align: center;
-            margin-bottom: 40px;
-        }
-        h2 {
-            margin-top: 30px;
-        }
-        ul {
+        .card ul {
             margin-left: 20px;
+        }
+        .pricing {
+            margin-top: 20px;
+        }
+        .pricing ul {
+            list-style: none;
+            padding: 0;
+        }
+        .pricing li {
+            background: #e0f2fe;
+            margin: 5px 0;
+            padding: 10px;
+            border-radius: 5px;
         }
         .snippet {
             background-color: #e0f2fe;
             border-left: 5px solid #0284c7;
-            padding: 15px;
-            margin: 20px 0;
+            padding: 20px;
+            margin: 40px 0;
             border-radius: 5px;
         }
-        .note {
-            font-style: italic;
-            color: #555;
-            margin-top: 20px;
+        footer {
+            text-align: center;
+            background-color: #1f2937;
+            color: #fff;
+            padding: 20px;
+            margin-top: 40px;
+        }
+        @media(max-width: 768px) {
+            .cards {
+                flex-direction: column;
+            }
         }
     </style>
 </head>
 <body>
+    <header>
+        <h1>TrueNorth Security</h1>
+    </header>
+
     <div class="container">
-        <h1>Your Company Name</h1>
 
-        <h2>Bookkeeping Reports</h2>
-        <p>
-            Accurate, clear, and timely financial reporting to help you understand your business performance.
-            Includes sample reports that demonstrate how your financial data can be organized for decision-making, compliance, and planning.
-        </p>
+        <div class="cards">
+            <div class="card">
+                <h2>Bookkeeping Reports</h2>
+                <p>Accurate, clear, and timely financial reporting to help you understand your business performance. Includes sample reports that demonstrate how your financial data can be organized for decision-making, compliance, and planning.</p>
+                <div class="pricing">
+                    <h3>Pricing:</h3>
+                    <ul>
+                        <li>Basic Report: $25</li>
+                        <li>Standard Report: $75</li>
+                        <li>Comprehensive Report: $150</li>
+                    </ul>
+                </div>
+            </div>
 
-        <h2>Email Artifact Analysis & Executive Reports</h2>
-        <p>
-            Fast, thorough analysis of individual emails with actionable insights. This service examines email headers, sending infrastructure, and potential threats, and delivers a <strong>professional, executive-ready report</strong> within 24 hours.
-        </p>
-
-        <ul>
-            <li>Email header inspection and source tracing</li>
-            <li>Domain, IP, and server investigation</li>
-            <li>Identification of spoofing or malicious indicators</li>
-            <li>Clear, executive-friendly reporting</li>
-        </ul>
-
-        <p><strong>Purpose:</strong> Quickly understand the risks of a specific email and make informed cybersecurity decisions.</p>
+            <div class="card">
+                <h2>Email Artifact Analysis & Executive Reports</h2>
+                <p>Fast, thorough analysis of individual emails with actionable insights. This service examines email headers, sending infrastructure, and potential threats, and delivers a <strong>professional, executive-ready report</strong> within 24 hours.</p>
+                <ul>
+                    <li>Email header inspection and source tracing</li>
+                    <li>Domain, IP, and server investigation</li>
+                    <li>Identification of spoofing or malicious indicators</li>
+                    <li>Clear, executive-friendly reporting</li>
+                </ul>
+                <div class="pricing">
+                    <h3>Pricing:</h3>
+                    <ul>
+                        <li>Basic Header Analysis: $25</li>
+                        <li>Infrastructure Investigation: $75</li>
+                        <li>Deep Threat Report: $150</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
 
         <div class="snippet">
             <strong>Fast, Clear Email Threat Analysis</strong><br>
@@ -77,9 +126,10 @@
             <em>Protect your inbox. Make informed decisions.</em>
         </div>
 
-        <p class="note">
-            Portfolio notes: Focus on Bookkeeping Reports and Email Analysis Reports. Do not include historical transaction import examples. Use real-world samples that show the deliverables clients receive.
-        </p>
     </div>
+
+    <footer>
+        &copy; 2026 TrueNorth Security. All Rights Reserved.
+    </footer>
 </body>
 </html>
